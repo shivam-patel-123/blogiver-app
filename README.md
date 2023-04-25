@@ -25,3 +25,5 @@ Architecture consists of the use of following services:
 9. **AWS ECR:** Amazon Elastic Container Registry allows me to put the docker image of my email sending logic. It is used by Lambda function to get the code and install the required dependencies. This is very flexible because I can create different version of my images and I am confident that what I wrote in the development environment is what actually runs in the production.
 
 10. **AWS Secrets Manager:** Secrets Manager stores all the secrets of backend application like mongodb username and passwords, JWT secret key, etc. The values of the secrets are later accessed in the application via AWS SDK.
+
+11. **AWS CloudFormation:** AWS CloudFormation is really powerful as it provisions entire architecture as shown in above figure automatically. You can refer `blogiver-template.yaml` file to see CloudFormation script.
